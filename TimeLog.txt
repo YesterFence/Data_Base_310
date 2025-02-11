@@ -26,15 +26,15 @@ The expected minimum amount of time each Sprint for each category is as follows:
 
 |Date      |Start Time|Category|Description                                 |Total Minutes|
 |----------|----------|:------:|--------------------------------------------|:-----------:|
-|   1/27   | 11:00AM  |   IM   |  Research and learning Databases           |   120 min   |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
-|          |          |        |                                            |             |
+|   1/27   | 11:00 AM |   IM   |  Research and learning Databases           |   120 min   |
+|   1/28   |  1:00 PM |   TP   |  Web socket Node.js research               |    60 min   |
+|   1/30   |  1:15 PM |   TP   |  Code testing and troubleshooting          |    60 min   |
+|   1/30   |  3:20 PM |   IM   |  Gathering data to input into tables       |    90 min   |
+|   1/31   | 12:00 PM |   IM   |  Setting up basic Tables and Inserts       |   160 min   |
+|   2/04   |  1:00 PM |   TP   |  Team Goals and evaluation                 |    80 min   |
+|   2/05   |  3:00 PM |   IM   |  Adding more inserts / troubleshooting     |   240 min   |
+|   2/07   | 10:00 AM |   IM   |  Debugging and trying to fix errors        |   360 min   |
+|   2/08   |  8:00 AM |   IM   |  Research and learning how to use Databases|   210 min   |
 |          |          |        |                                            |             |
 |          |          |        |                                            |             |
 |          |          |        |                                            |             |

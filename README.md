@@ -1,6 +1,6 @@
 # Data_Base_310
 
-Relational SQL Database Project to help me understand how it works
+Relational SQL Database Project to help me understand data connects with one another in SQL.
  
 ## Overview
 
@@ -13,7 +13,7 @@ Relational SQL Database Project to help me understand how it works
 ---
 [Software Demo Video]()
 
-[Java Code]()
+[DataBase Code]()
 
 [Github Project]()
 
@@ -48,9 +48,9 @@ To recreate the development environment, you need the following software and/or 
 
 I found these websites useful in developing this software:
 
-* [Visual Studio Setup Guide for Java](https://code.visualstudio.com/docs/languages/java)
-* [Java Full Course Video](https://www.youtube.com/watch?v=eIrMbAQSU34)
-* [geeksforgeeks](https://www.geeksforgeeks.org/java-current-date-time/#)
+* [RealmEye.com](https://www.realmeye.com/wiki/classes)
+* [Damage Dealing Equations](https://www.realmeye.com/wiki/character-stats#:~:text=Damage%20Multiplier%20if%20Weak%20=%200.5,SPD%20(Speed))
+* [W3Schools](https://www.w3schools.com/sql/sql_intro.asp)
 <!-- * []() -->
 
 ## Future Work
