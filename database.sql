@@ -1,7 +1,7 @@
 --------------------------------- TABLES --------------------------------
 CREATE TABLE IF NOT EXISTS class 
 (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
     name TEXT NOT NULL UNIQUE,
     hp INTEGER,
     mp INTEGER,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS class
 
 CREATE TABLE IF NOT EXISTS weapon_types 
 (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
     type_name TEXT NOT NULL UNIQUE
 );
 
