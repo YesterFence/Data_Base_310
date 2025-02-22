@@ -21,13 +21,12 @@ CREATE TABLE weapon
     type TEXT NOT NULL,
     damage_min INTEGER NOT NULL,
     damage_max INTEGER NOT NULL,
-    damage_ave INTEGER NOT NULL,
+    damage_ave REAL NOT NULL,
     proj_shot INTEGER NOT NULL,
     proj_range REAL NOT NULL
 );
 INSERT INTO weapon (name, type, damage_min, damage_max, damage_ave, proj_shot, proj_range) 
 VALUES
-
 ('Staff of Destruction',        'Staff',    45,  85,  65.0, 2, 8.55),
 ('Staff of Horror',             'Staff',    50,  90,  70.0, 2, 8.55),
 ('Staff of Necrotic Arcana',    'Staff',    50,  95,  72.5, 2, 8.55),
@@ -68,18 +67,29 @@ VALUES
 CREATE TABLE class_weapon 
 (
     class_id INTEGER,
-    weapon_id INTEGER,
-    PRIMARY KEY (class_id, weapon_id),
-    FOREIGN KEY (class_id) REFERENCES class(id),
-    FOREIGN KEY (weapon_id) REFERENCES weapon(id)
+    weapon_type TEXT,
+    PRIMARY KEY (class_id, weapon_type),
+    FOREIGN KEY (class_id) REFERENCES class(id)
+    -- FOREIGN KEY (weapon_id) REFERENCES weapon(id)
 );
-INSERT INTO class_weapon (class_id, weapon_id) 
+INSERT INTO class_weapon (class_id, weapon_type) 
 VALUES
-(1, 2), -- Wizard uses Staff
-(2, 1), -- Priest uses Wand
-(3, 1), -- Sorcerer uses Wand
-(4, 5), -- Archer uses Bow
-(5, 3), -- Rogue uses Dagger
-(6, 3), -- Trickster uses Dagger
-(7, 4), -- Warrior uses Sword
-(8, 4); -- Knight uses Sword
+(1, 'Staff'),
+(2, 'Wand'),
+(3, 'Wand'),
+(4, 'Bow'),
+(5, 'Dagger'),
+(6, 'Dagger'),
+(7, 'Sword'),
+(8, 'Sword');
+
+SELECT weapon.*
+FROM weapon
+JOIN class_weapon ON class_weapon.weapon_type = weapon.type
+JOIN class ON class_weapon.class_id = class.id
+WHERE class.name = 'Priest';
+
+SELECT class.name
+From class
+JOIN class_weapon ON class.id = class_weapon.class_id
+WHERE class_weapon.weapon_type = 'Dagger';
